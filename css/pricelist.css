@@ -1,0 +1,31 @@
+/* pricelist.css */
+
+table {
+    border : solid;
+    border-color : grey;
+    border-collapse: collapse;    
+}
+
+tbody {
+    border : solid;
+    border-color : grey;
+}
+
+tr th {border : solid;
+    border-color : grey;}
+
+.tdstyle td {border : solid;
+    border-color : grey;}
+
+tr:nth-child(odd) {
+    background-color : #B98F6D;
+}
+
+tr:nth-child(even)
+{
+    background-color : #967159;
+}
+
+table tr:first-child { 
+    background-color: lightbrown;
+}

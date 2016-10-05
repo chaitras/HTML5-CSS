@@ -1,0 +1,117 @@
+﻿/* common.css */
+
+html , body {
+      height: 99%;   
+      margin-top: 0;   
+      margin-bottom: 0;
+}
+
+body {
+    background-image: url("../images/kirjatausta.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-feature-settings : Arial, Helvetica, sans-serif;    
+}
+
+#content {
+    border-width: 0.2em;
+    margin-top: 1em;
+    margin-left : auto;
+    margin-right: auto;
+    padding : 2%;
+    min-height: 80%;
+
+}
+
+#left {
+
+width: 10em;
+margin-right: 1em;
+float:left;
+}
+
+#right {
+    margin-left : 2%;
+    overflow:auto;
+}
+
+h1 {
+    width:80%;
+    /*border:2px solid yellow;*/
+    text-align: center;
+    margin-left:auto ;
+    margin-right:auto ;
+}
+
+h1:hover {
+  box-shadow: 10px 5px 3px hsla(0, 0%, 0%, 0.4);
+      }
+
+.brownline {
+    border-color :brown;
+    border-width:0.1em;
+    padding-left: 0.5em;
+    border-left-style: solid
+}
+#slogan {
+
+    font-style: italic;
+    font-weight: bold;
+}
+
+#footer {    
+    font-variant:initial;
+    margin-top: 1em;
+    margin-left : auto;
+    margin-right: auto;
+    padding : 2%;
+}
+
+/* a page can have many footers say with in a section or at endof page.
+    use below selector to select the footer which has pagebolock class. */
+footer.pageblock {    
+    font-variant:small-caps;
+}
+
+nav li { list-style-type: none; 
+         background-color: #967159;  
+         margin-bottom : 2px;
+         margin-top : 2px;
+         padding: 6px;   
+         -moz-border-radius: 10px; 
+         -webkit-border-radius: 10px; 
+         border-radius: 10px;                      
+         }
+
+li a {
+         color : white;
+         text-decoration: none;
+     }
+
+nav li:hover {
+    background-color: #B98F6D
+
+}
+
+#licolor { background-color: #B98F6D; 
+           -moz-text-decoration-color: white; /* Code for Firefox */
+           text-decoration-color: white; 
+           text-underline-position: unset; 
+         }
+
+ul { padding : 0}
+
+.pageblock {
+    /*put common stuff here*/
+    width: 80%;
+    background-color: white;
+    margin: 1em auto;
+}
+
+#rounded { 
+    /*margin: 20px 10px; 
+    padding: 4px;         
+    width: 120px;         
+    border: #C00 2px solid; */
+ } 

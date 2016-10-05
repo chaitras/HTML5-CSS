@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />  
+    <script type="text/javascript" src="demo.js"></script>
+    <style>
+        #timeout {
+            
+            border: #C00 2px none;
+            background-color : #808080;
+            
+        }
+        .clocklg 
+        {
+            vertical-align:middle; 
+            font-family:Orbitron;
+            font-size:30px;
+            font-weight:normal;
+            color:#FFF;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1 id="heading">JavaScript</h1>
+    <script type="text/javascript">changeHeading();</script>
+    <script type="text/javascript">printDebugLogs();</script>
+
+    <h4>The current Localized time is:  <output id="timeout" class="clocklg"></output> </h4>
+    <script type="text/javascript">displayTime();</script>
+    <h2>Calendar : <input type="text" id="year" /> <input type="Submit" onclick="displayMonth('year')"/></h2>
+    <div id="calendar"></div>
+    
+</body>
+</html>
+
+
+
+
+
+

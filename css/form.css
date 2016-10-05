@@ -1,0 +1,18 @@
+﻿select,textarea,input {
+    
+    
+    margin-left: 55px;
+    
+}
+
+.flable {
+    display: inline-block;
+    width : 100px;
+    vertical-align:top;    
+}
+
+.finput {
+    display:inline-block;
+    
+}
+

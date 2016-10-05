@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="./css/common.css" />  
+<link rel="stylesheet" href="./css/form.css"/>
+<style type="text/css">
+    body {
+        /*background-image:none;*/
+    }
+</style>
+<style type="text/css">
+    #heading { color : maroon; }
+     .heading { color : aquamarine;   }
+    h1 { color: palevioletred;    }
+   
+</style>
+<head>
+    <title>Space B&amp;B - Offers</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+
+    <div id="content" class="pageblock">
+        <div id="left">
+            <aside>
+                <img src="./images/tray.jpg" title="A Breakfast Tray" alt="tray" />
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Front Page</a></li>
+                        <li><a href="people.html">Personnel</a></li>
+                        <li><a href="pricelist.html">Pricelist</a></li>
+                        <li><a href="requestoffer.html">Offer</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </div>
+        <div id="right">
+			<main>
+				<header>
+				<h1 id="heading" class="heading">Request Offer</h1>            
+				</header>
+
+				<form action="http://localhost:3000/formhandler" method="get">
+					<fieldset>
+						<legend>Customer Info</legend>
+						<div class="flable">Name:</div><div class="finput"><input type="text" name="cname" /></div><br/>
+						<div class="flable">Sex: </div><div class="finput">
+							<input type="radio" name="sex" />Female<br />
+							<input type="radio" name="sex" />Male<br /></div>
+						<br /> <div class="flable">Email:  </div><div class="finput"><input type="email" name="cemail" /><br /></div>
+					</fieldset>
+					<fieldset>
+						<legend>Room</legend>
+						<div class="flable">Room Type</div><div class="finput">
+							<select name="room">
+								<option value="SD" selected>Standard Double</option>
+								<option value="FLY">Faimly</option>
+								<option value="HS">Honeymoon Suite</option>
+							</select><br /></div>
+						<br /><br/><div class="flable">
+							Additional Info:
+						</div><div class="finput">
+							<textarea wrap="soft" name="info"></textarea></div>
+					</fieldset><br />
+					<input type="submit" value="send" />
+					<input type="reset" value="reset" />
+					<!--<button name="send" value="send">Send</button>
+					<button name="reset" value="reset">Reset</button>
+						can be used but Ie6 does not support this so not widelt used
+						-->
+				</form>
+			</main>
+		</div>		
+    </div>
+    <div id="footer" class="pageblock">
+        <footer>
+            Copyright&copy2016 Space Bed and Breakfast Inc
+
+        </footer>
+    </div>
+
+</body>
+</html>
